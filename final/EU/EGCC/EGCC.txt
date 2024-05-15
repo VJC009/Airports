@@ -1,7 +1,7 @@
 [airspace]
 radius = 65
 elevation = 257
-floor = 1600 				; minimum selectable altitude
+floor = 2000 				; minimum selectable altitude
 descendaltitude = 20000 	; minimum initial altitude for arrivals
 ceiling = 20000				; maximum selectable altitude
 above = 22000 				; maximum departure altitude when SID is enabled (must be above ceiling)
@@ -9,6 +9,7 @@ transitionaltitude = 5000	; highest altitude displayed in feet instead of flight
 separation = 3				; minimum allowed distance between aircraft in NM
 center = N53.3536987305, W2.27495002747
 usa = false
+automatic = true
 magneticvar = -2.482
 beacons =
     MCT, N53.356944, W2.262222, -232, Manchester
@@ -228,7 +229,7 @@ name = Manchester Airport
 code = EGCC
 runways =
 	rwy1, 05L, N53.3451, W2.29274, 52, 10000, 1401, 600, 212, 3, 52.5, 3, 230, 0, 0, 0, 0, 118.630
-	rwy2, 05R, N53.332, W2.31066, 51, 9997, 604, 604, 186, 3, 50, 3, 232.5, 0, 0, 0, 0, 119.405
+	rwy2, 05R, N53.332, W2.31066, 51, 10007, 604, 604, 186, 3, 50, 3, 232.5, 0, 0, 0, 0, 119.405
 
 climbaltitude = 5000
 
@@ -274,7 +275,9 @@ entrypoints =
     285, IBRAR
     290, PENIL
     338, LAKEY
-
+    149, TNT
+    360, SETEL
+    117, GOLES
 
 [airport2]
 name = Liverpool John Lennon Airport
@@ -598,9 +601,9 @@ route1 =
 #   TNT
     N53.053889, W1.67
 #   QUSHI
-    N53.108139, W1.774836, , 250
+    N53.108139, W1.774836
 #   DAYNE
-    N53.238611, W2.029167, , 230
+    N53.238611, W2.029167
     end, hold
 
 
@@ -615,9 +618,9 @@ route1 =
 #   TNT
     N53.053889, W1.67
 #   QUSHI
-    N53.108139, W1.774836, , 250
+    N53.108139, W1.774836
 #   DAYNE
-    N53.238611, W2.029167, , 230
+    N53.238611, W2.029167
     end, hold
 
 
@@ -632,9 +635,9 @@ route1 =
 #   TNT
     N53.053889, W1.67
 #   QUSHI
-    N53.108139, W1.774836, , 250
+    N53.108139, W1.774836
 #   DAYNE
-    N53.238611, W2.029167, , 230
+    N53.238611, W2.029167
     end, hold
 
 
@@ -649,9 +652,9 @@ route1 =
 #   TNT
     N53.053889, W1.67
 #   QUSHI
-    N53.108139, W1.774836, , 250
+    N53.108139, W1.774836
 #   DAYNE
-    N53.238611, W2.029167, , 230
+    N53.238611, W2.029167
     end, hold
 
 
@@ -667,9 +670,9 @@ route1 =
 #   REXAM
     N53.066667, W3.160278
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -684,9 +687,9 @@ route1 =
 #   REXAM
     N53.066667, W3.160278
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -701,9 +704,9 @@ route1 =
 #   REXAM
     N53.066667, W3.160278
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -718,9 +721,9 @@ route1 =
 #   REXAM
     N53.066667, W3.160278
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -733,9 +736,9 @@ route 1 =
 #   MALUD
     N53.413333, W3.608333
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -748,9 +751,9 @@ route 1 =
 #   MALUD
     N53.413333, W3.608333
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -763,9 +766,9 @@ route 1 =
 #   MALUD
     N53.413333, W3.608333
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -778,9 +781,9 @@ route 1 =
 #   MALUD
     N53.413333, W3.608333
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -793,9 +796,9 @@ route 1 =
 #   IBRAR
     N53.531667, W3.686389
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -808,9 +811,9 @@ route 1 =
 #   IBRAR
     N53.531667, W3.686389
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -823,9 +826,9 @@ route 1 =
 #   IBRAR
     N53.531667, W3.686389
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -838,9 +841,9 @@ route 1 =
 #   IBRAR
     N53.531667, W3.686389
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -853,9 +856,9 @@ route 1 =
 #   PENIL
     N53.615833, W3.663611
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -868,9 +871,9 @@ route 1 =
 #   PENIL
     N53.615833, W3.663611
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -883,9 +886,9 @@ route 1 =
 #   PENIL
     N53.615833, W3.663611
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -898,9 +901,9 @@ route 1 =
 #   PENIL
     N53.615833, W3.663611
 #   WALLASEY
-    N53.391944, W3.134444, , 250
+    N53.391944, W3.134444
 #   MIRSI
-    N53.538056, W2.711667, , 230
+    N53.538056, W2.711667
     end, hold
 
 
@@ -914,7 +917,7 @@ route 1 =
 #   GOLES
     N53.608056, W1.083333
 #   POL
-    N53.743889, W2.103333, , 250
+    N53.743889, W2.103333
 #   BURNI
     N53.727222, W2.517778
 #   NW of BURNI to enforce right turn to ROSUN
@@ -922,7 +925,7 @@ route 1 =
 #   West of the previous to continue the right hand turn
     N53.793889, W2.449167
 #   ROSUN
-    N53.668889, W2.349167, , 230
+    N53.668889, W2.349167
     end, hold
 
 
@@ -935,7 +938,7 @@ route 1 =
 #   GOLES
     N53.608056, W1.083333
 #   POL
-    N53.743889, W2.103333, , 250
+    N53.743889, W2.103333
 #   BURNI
     N53.727222, W2.517778
 #   NW of BURNI to enforce right turn to ROSUN
@@ -943,7 +946,7 @@ route 1 =
 #   West of the previous to continue the right hand turn
     N53.793889, W2.449167
 #   ROSUN
-    N53.668889, W2.349167, , 230
+    N53.668889, W2.349167
     end, hold
 
 
@@ -956,7 +959,7 @@ route 1 =
 #   GOLES
     N53.608056, W1.083333
 #   POL
-    N53.743889, W2.103333, , 250
+    N53.743889, W2.103333
 #   BURNI
     N53.727222, W2.517778
 #   NW of BURNI to enforce right turn to ROSUN
@@ -964,7 +967,7 @@ route 1 =
 #   West of the previous to continue the right hand turn
     N53.793889, W2.449167
 #   ROSUN
-    N53.668889, W2.349167, , 230
+    N53.668889, W2.349167
     end, hold
 
 
@@ -977,7 +980,7 @@ route 1 =
 #   GOLES
     N53.608056, W1.083333
 #   POL
-    N53.743889, W2.103333, , 250
+    N53.743889, W2.103333
 #   BURNI
     N53.727222, W2.517778
 #   NW of BURNI to enforce right turn to ROSUN
@@ -985,7 +988,7 @@ route 1 =
 #   West of the previous to continue the right hand turn
     N53.793889, W2.449167
 #   ROSUN
-    N53.668889, W2.349167, , 230
+    N53.668889, W2.349167
     end, hold
 
 
@@ -1001,9 +1004,9 @@ route 1 =
 #   BEGAM
     N54.156944, W2.120833
 #   SETEL
-    N54.0125, W2.435833, , 250
+    N54.0125, W2.435833
 #   ROSUN
-    N53.668889, W2.349167, , 230
+    N53.668889, W2.349167
     end, hold
 
 
@@ -1018,9 +1021,9 @@ route 1 =
 #   BEGAM
     N54.156944, W2.120833
 #   SETEL
-    N54.0125, W2.435833, , 250
+    N54.0125, W2.435833
 #   ROSUN
-    N53.668889, W2.349167, , 230
+    N53.668889, W2.349167
     end, hold
 
 
@@ -1035,9 +1038,9 @@ route 1 =
 #   BEGAM
     N54.156944, W2.120833
 #   SETEL
-    N54.0125, W2.435833, , 250
+    N54.0125, W2.435833
 #   ROSUN
-    N53.668889, W2.349167, , 230
+    N53.668889, W2.349167
     end, hold
 
 
@@ -1052,9 +1055,9 @@ route 1 =
 #   BEGAM
     N54.156944, W2.120833
 #   SETEL
-    N54.0125, W2.435833, , 250
+    N54.0125, W2.435833
 #   ROSUN
-    N53.668889, W2.349167, , 230
+    N53.668889, W2.349167
     end, hold
 
 
@@ -1067,9 +1070,9 @@ route 1 =
 #   LAKEY
     N54.238889, W2.981111
 #   DIZZE
-    N53.845206, W2.542475, , 250
+    N53.845206, W2.542475
 #   ROSUN
-    N53.668889, W2.349167, , 230
+    N53.668889, W2.349167
     end, hold
 
 
@@ -1082,9 +1085,9 @@ route 1 =
 #   LAKEY
     N54.238889, W2.981111
 #   DIZZE
-    N53.845206, W2.542475, , 250
+    N53.845206, W2.542475
 #   ROSUN
-    N53.668889, W2.349167, , 230
+    N53.668889, W2.349167
     end, hold
 
 
@@ -1097,9 +1100,9 @@ route 1 =
 #   LAKEY
     N54.238889, W2.981111
 #   DIZZE
-    N53.845206, W2.542475, , 250
+    N53.845206, W2.542475
 #   ROSUN
-    N53.668889, W2.349167, , 230
+    N53.668889, W2.349167
     end, hold
 
 
@@ -1112,9 +1115,9 @@ route 1 =
 #   LAKEY
     N54.238889, W2.981111
 #   DIZZE
-    N53.845206, W2.542475, , 250
+    N53.845206, W2.542475
 #   ROSUN
-    N53.668889, W2.349167, , 230
+    N53.668889, W2.349167
     end, hold
 
 
@@ -1394,3 +1397,114 @@ route 1 =
     N53.10.23, W002.30.06
 #   Intercept 11NM @ 3000'
     11, , 210
+
+# STAR - SETEL
+[approach49]
+runway = rwy1
+beacon = SETEL
+
+route1 =
+    172, SETEL1M, SETEL ONE MIKE
+#   SETEL
+    N54.0125, W2.435833
+#   ROSUN
+    N53.668889, W2.349167
+    end, hold
+
+[approach50]
+runway = rwy1, rev
+beacon = SETEL
+
+route1 =
+    172, SETEL1M, SETEL ONE MIKE
+#   SETEL
+    N54.0125, W2.435833
+#   ROSUN
+    N53.668889, W2.349167
+    end, hold
+
+
+[approach51]
+runway = rwy2
+beacon = SETEL
+
+route1 =
+    172, SETEL1M, SETEL ONE MIKE
+#   SETEL
+    N54.0125, W2.435833
+#   ROSUN
+    N53.668889, W2.349167
+    end, hold
+
+
+[approach52]
+runway = rwy2, rev
+beacon = SETEL
+
+route1 =
+    172, SETEL1M, SETEL ONE MIKE
+#   SETEL
+    N54.0125, W2.435833
+#   ROSUN
+    N53.668889, W2.349167
+    end, hold
+
+# STAR - ELVOS
+[approach53]
+runway = rwy1
+beacon = TNT
+
+route1 =
+    329, ELVOS1M, ELVOS ONE MIKE DIRECT TRENT
+#   TNT
+    N53.053889, W1.67
+#   QUSHI
+    N53.108139, W1.774836
+#   DAYNE
+    N53.238611, W2.029167
+    end, hold
+
+
+[approach54]
+runway = rwy1, rev
+beacon = TNT
+
+route1 =
+    329, ELVOS1M, ELVOS ONE MIKE DIRECT TRENT
+#   TNT
+    N53.053889, W1.67
+#   QUSHI
+    N53.108139, W1.774836
+#   DAYNE
+    N53.238611, W2.029167
+    end, hold
+
+
+[approach55]
+runway = rwy2
+beacon = TNT
+
+route1 =
+    329, ELVOS1M, ELVOS ONE MIKE DIRECT TRENT
+#   TNT
+    N53.053889, W1.67
+#   QUSHI
+    N53.108139, W1.774836
+#   DAYNE
+    N53.238611, W2.029167
+    end, hold
+
+
+[approach56]
+runway = rwy2, rev
+beacon = TNT
+
+route1 =
+    329, ELVOS1M, ELVOS ONE MIKE DIRECT TRENT
+#   TNT
+    N53.053889, W1.67
+#   QUSHI
+    N53.108139, W1.774836
+#   DAYNE
+    N53.238611, W2.029167
+    end, hold
